@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <View
+      id="View2">
+      <property
+         name="activityId">Start</property>
+      <property
+         name="page">/Start.jsf</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>Start&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">95.390625</property>
+      <property
+         name="x">425.0</property>
+   </View>
+   <MethodCall
+      id="MethodCall4">
+      <property
+         name="activityId">selectNextTab</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>selectNextTab&lt;/b>&lt;/p>&lt;p>Activity Type:  Method Call&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">93.49414</property>
+      <property
+         name="x">226.0</property>
+   </MethodCall>
+   <WildcardControlFlowRule
+      id="WildcardControlFlowRule5">
+      <property
+         name="activityId">*</property>
+      <property
+         name="y">92.19531</property>
+      <property
+         name="x">26.0</property>
+   </WildcardControlFlowRule>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase6"
+      from="WildcardControlFlowRule5"
+      to="MethodCall4">
+      <property
+         name="fromOutcome">nextTab</property>
+      <property
+         name="sdm:polyPoints">R50,62.0,92.34473,185.0,93.143555,L50</property>
+   </ControlFlowCase>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase7"
+      from="MethodCall4"
+      to="View2">
+      <property
+         name="fromOutcome">goPage</property>
+      <property
+         name="sdm:polyPoints">R50,267.0,93.143555,384.0,95.04004,L50</property>
+   </ControlFlowCase>
+</SDM>

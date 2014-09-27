@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="Start.jsf" id="d1">
+        <af:form id="f1">
+            <af:panelGridLayout id="pgl1">
+                <af:gridRow height="50px" id="gr2">
+                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc1">
+                        <!-- Header -->
+                        <af:outputText value="PanelTab Navigation" id="ot1" inlineStyle="font-size:x-large;"/>
+                    </af:gridCell>
+                </af:gridRow>
+                <af:gridRow id="gr3" height="20px">
+                    <af:gridCell id="gc3">
+                        <af:button text="Outer Navigate Tab" id="b1" actionListener="#{viewScope.NavigateTabBean.naviGateButtonAction}"/>
+                    </af:gridCell>
+                </af:gridRow>
+                <af:gridRow height="100%" id="gr1">
+                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc2">
+                        <!-- Content -->
+                        <af:panelTabbed position="above" id="pt1">
+                            <af:showDetailItem id="tab1" text="Tab Label 1" disclosed="true">
+                                <af:panelStretchLayout id="psl1">
+                                    <f:facet name="bottom"/>
+                                    <f:facet name="center">
+                                        <af:region value="#{bindings.tab1btf1.regionModel}" id="r3"/>
+                                    </f:facet>
+                                    <f:facet name="start"/>
+                                    <f:facet name="end"/>
+                                    <f:facet name="top">
+                                        <af:outputText value="Tab 1" id="ot2" inlineStyle="font-size:x-large;"/>
+                                    </f:facet>
+                                </af:panelStretchLayout>
+                            </af:showDetailItem>
+                            <af:showDetailItem id="tab2" text="Tab Label 2">
+                                <af:panelStretchLayout id="psl2">
+                                    <f:facet name="bottom"/>
+                                    <f:facet name="center">
+                                        <af:region value="#{bindings.tab2btf1.regionModel}" id="r2"/>
+                                    </f:facet>
+                                    <f:facet name="start"/>
+                                    <f:facet name="end"/>
+                                    <f:facet name="top">
+                                        <af:outputText value="Tab 2" id="ot3" inlineStyle="font-size:x-large;"/>
+                                    </f:facet>
+                                </af:panelStretchLayout>
+                            </af:showDetailItem>
+                            <af:showDetailItem id="tab3" text="Tab Label 3">
+                                <af:panelStretchLayout id="psl3">
+                                    <f:facet name="bottom"/>
+                                    <f:facet name="center">
+                                        <af:region value="#{bindings.tab3btf1.regionModel}" id="r1"/>
+                                    </f:facet>
+                                    <f:facet name="start"/>
+                                    <f:facet name="end"/>
+                                    <f:facet name="top">
+                                        <af:outputText value="Tab 3" id="ot4" inlineStyle="font-size:x-large;"/>
+                                    </f:facet>
+                                </af:panelStretchLayout>
+                            </af:showDetailItem>
+                            <af:showDetailItem text="Tab Label 4" id="sdi1">
+                                <af:panelStretchLayout id="psl4">
+                                    <f:facet name="bottom"/>
+                                    <f:facet name="center">
+                                        <af:region value="#{bindings.tab_btf1.regionModel}" id="r4"/>
+                                    </f:facet>
+                                    <f:facet name="start"/>
+                                    <f:facet name="end"/>
+                                    <f:facet name="top">
+                                        <af:outputText value="Tab 4" id="ot5" inlineStyle="font-size:x-large;"/>
+                                    </f:facet>
+                                </af:panelStretchLayout>
+                            </af:showDetailItem>
+                            <af:showDetailItem text="Tab Label 5" id="sdi2">
+                                <af:panelStretchLayout id="psl5">
+                                    <f:facet name="bottom"/>
+                                    <f:facet name="center">
+                                        <af:region value="#{bindings.tab_btf2.regionModel}" id="r5"/>
+                                    </f:facet>
+                                    <f:facet name="start"/>
+                                    <f:facet name="end"/>
+                                    <f:facet name="top">
+                                        <af:outputText value="Tab 5" id="ot6" inlineStyle="font-size:x-large;"/>
+                                    </f:facet>
+                                </af:panelStretchLayout>
+                            </af:showDetailItem>
+                        </af:panelTabbed>
+                    </af:gridCell>
+                </af:gridRow>
+            </af:panelGridLayout>
+        </af:form>
+    </af:document>
+</f:view>

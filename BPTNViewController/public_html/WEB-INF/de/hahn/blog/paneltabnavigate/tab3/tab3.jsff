@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:panelGridLayout id="pgl1">
+        <af:gridRow height="20px" id="gr2">
+            <af:gridCell width="100%" id="gc1">
+                <!-- Header -->
+                <af:button text="Inner Navigation Tab" id="b1" action="navigate_next_tab"/>
+            </af:gridCell>
+        </af:gridRow>
+        <af:gridRow height="100%" id="gr1">
+            <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc2">
+                <!-- Content -->
+                <af:panelGroupLayout id="pgl2">
+                    <af:outputText value="Tab 3 region" id="ot1" inlineStyle="font-size:x-large;"/>
+                </af:panelGroupLayout>
+            </af:gridCell>
+        </af:gridRow>
+    </af:panelGridLayout>
+</ui:composition>

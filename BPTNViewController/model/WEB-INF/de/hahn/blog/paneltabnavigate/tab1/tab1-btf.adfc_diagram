@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <View
+      id="View2">
+      <property
+         name="activityId">tab1</property>
+      <property
+         name="page">/WEB-INF/de/hahn/blog/paneltabnavigate/tab1/tab1.jsff</property>
+      <property
+         name="start">true</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>tab1&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">198.19531</property>
+      <property
+         name="x">395.0</property>
+      <property
+         name="pageFragment">true</property>
+   </View>
+   <ParentAction
+      id="ParentAction3">
+      <property
+         name="activityId">nextTab</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>nextTab&lt;/b>&lt;/p>&lt;p>Activity Type:  Parent Action&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">199.14355</property>
+      <property
+         name="x">632.0</property>
+   </ParentAction>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase4"
+      from="View2"
+      to="ParentAction3">
+      <property
+         name="fromOutcome">navigate_next_tab</property>
+      <property
+         name="sdm:polyPoints">R50,436.0,197.84473,591.0,198.79297,L50</property>
+   </ControlFlowCase>
+</SDM>
